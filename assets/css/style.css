@@ -1,0 +1,87 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.container__form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    height: 70vh;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 3rem;
+    flex-direction: column;
+  
+    box-shadow: 10px 10px 20px 1px rgb(209, 209, 209);
+
+}
+
+.cards__input{
+    border: none;
+    background-color: beige;
+    padding:1rem 1rem;
+    border-radius: 10px;
+    border: solid 1px indigo;
+    outline: none;
+}
+.cards__input:focus{
+    transition: 0.2s;
+    border-bottom: 4px solid indigo;
+    background-color: rgb(210, 206, 201);
+
+}
+
+
+.container__form h1{
+    color: rgb(43, 40, 40);
+    text-transform: uppercase;
+    font-weight:bolder;
+    
+}
+.h1-span{
+    color:rgb(121, 16, 196);
+    text-transform: uppercase;
+   
+
+}
+.cards__button{
+    margin-top: 20px;
+    padding: 10px 51px;
+    background-color:rgb(121, 16, 196);
+    border: none;
+    border-radius: 10px;
+    color: white;
+
+}
+.cards_typewriter{
+    margin: 20px 20px;
+}
+.cards_typewriter p {
+    overflow: hidden; 
+    white-space: nowrap; 
+    margin: 0;
+    letter-spacing: .15em;
+    animation: typing 4s steps(40, end) infinite, blink-caret .75s step-end infinite;
+    border-right: .15em solid transparent; /* Eliminar el cursor original */
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: orange;
+    }
+  }
